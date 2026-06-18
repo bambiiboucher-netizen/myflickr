@@ -11,14 +11,20 @@
 <meta property="og:type" content="website">
 
 <style>
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     margin: 0;
-    height: 100vh;
-    background:
-      radial-gradient(circle at top, rgba(255,255,255,0.14), transparent 30%),
-      linear-gradient(135deg, #08080c, #17111f, #050507);
-    color: #f7f1ff;
+    min-height: 100vh;
     font-family: Georgia, "Times New Roman", serif;
+    color: #eaffef;
+    background:
+      linear-gradient(rgba(0, 20, 12, 0.45), rgba(0, 0, 0, 0.72)),
+      url("bea-bg.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,55 +32,57 @@
   }
 
   .card {
-    padding: 42px 34px;
-    max-width: 420px;
-    border: 1px solid rgba(255,255,255,0.18);
-    border-radius: 24px;
-    background: rgba(0,0,0,0.38);
-    box-shadow: 0 0 45px rgba(170, 90, 255, 0.18);
+    width: min(90%, 560px);
+    padding: 44px 34px;
+    border-radius: 22px;
+    background: rgba(0, 10, 5, 0.68);
+    border: 1px solid rgba(139, 255, 177, 0.38);
+    box-shadow: 0 0 45px rgba(74, 255, 140, 0.22);
     backdrop-filter: blur(8px);
   }
 
   h1 {
-    margin: 0 0 12px;
-    font-size: 42px;
-    letter-spacing: 1px;
+    margin: 0 0 14px;
+    font-size: clamp(42px, 8vw, 72px);
     font-weight: normal;
+    letter-spacing: 1px;
+    text-shadow: 0 0 18px rgba(165, 255, 190, 0.55);
   }
 
-  p {
-    margin: 0 0 28px;
-    font-size: 15px;
-    letter-spacing: 1.5px;
+  .subtitle {
+    margin: 0 0 32px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
     text-transform: uppercase;
-    opacity: 0.82;
+    color: #b7ffc6;
   }
 
   a {
     display: inline-block;
-    padding: 13px 22px;
+    padding: 15px 34px;
     border-radius: 999px;
-    color: #fff;
+    border: 1px solid rgba(153, 255, 176, 0.7);
+    color: #eaffef;
     text-decoration: none;
-    background: linear-gradient(135deg, #8b5cf6, #ec4899);
     font-family: Arial, sans-serif;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    box-shadow: 0 0 22px rgba(236,72,153,0.28);
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background: rgba(0, 40, 20, 0.5);
+    box-shadow: 0 0 24px rgba(106, 255, 154, 0.25);
   }
 
   a:hover {
+    background: rgba(76, 255, 136, 0.15);
     transform: translateY(-1px);
-    box-shadow: 0 0 30px rgba(236,72,153,0.42);
   }
 
   .note {
-    margin-top: 18px;
-    font-family: Arial, sans-serif;
-    font-size: 12px;
-    opacity: 0.55;
-    text-transform: none;
-    letter-spacing: 0;
+    margin-top: 24px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.82;
   }
 </style>
 
@@ -88,10 +96,10 @@
 <body>
   <div class="card">
     <h1>Bea's Flickr</h1>
-    <p>Artwork • Photography • Second Life</p>
+    <div class="subtitle">Artwork • Photography • Second Life</div>
 
     <a href="https://www.flickr.com/photos/202234068@N03/albums/72177720333835023/">
-      ✦ Enter Bea's Flickr Gallery ✦
+      ✦ Enter Gallery ✦
     </a>
 
     <div class="note">Redirecting in a few seconds...</div>
